@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Property Rental System</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Available Properties</h1>
+    <ul>
+        {% for property in properties %}
+        <li>
+            <h2>{{ property.name }}</h2>
+            <p>{{ property.address }}</p>
+            <p>{{ property.description }}</p>
+            <p>Price: ${{ property.price }}</p>
+            <a href="{{ url_for('property_details', property_id=property.id) }}">View Details</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

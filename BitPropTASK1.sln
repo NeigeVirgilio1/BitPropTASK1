@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "BitPropTASK1", "BitPropTASK1.pyproj", "{178504DB-9C8C-4223-AD2F-FFD17DE3D5A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A2EFF67C-BABE-4865-B22F-310CB12029EA}"
+	ProjectSection(SolutionItems) = preProject
+		agent_dashboard.html = agent_dashboard.html
+		index.html = index.html
+		login.html = login.html
+		property_details.html = property_details.html
+		style.css = style.css
+		success.html = success.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "property_database.db", "property_database.db", "{24E0B55B-FB83-4717-A6DD-09A5809197A9}"
+	ProjectSection(SolutionItems) = preProject
+		SqlQuery_1.sql = SqlQuery_1.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{178504DB-9C8C-4223-AD2F-FFD17DE3D5A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{178504DB-9C8C-4223-AD2F-FFD17DE3D5A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4725C8FD-9A38-489F-9F8E-97A401E6D0CA}
+	EndGlobalSection
+EndGlobal

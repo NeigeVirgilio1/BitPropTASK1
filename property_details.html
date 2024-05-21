@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ property.name }} - Details</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>{{ property.name }}</h1>
+    <p>{{ property.address }}</p>
+    <p>{{ property.description }}</p>
+    <p>Price: ${{ property.price }}</p>
+    <form method="POST" action="{{ url_for('register_interest', property_id=property.id) }}">
+        <h2>Register Your Interest</h2>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="phone" placeholder="Your Phone Number" required>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
+<! –– this shows prospective tenants information on a property and has a portal for them to register interest ––>

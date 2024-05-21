@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Agent Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Agent Dashboard - {{ agent.name }}</h1>
+    <h2>Interested Tenants:</h2>
+    <ul>
+        {% for tenant in tenants %}
+        <li>
+            <h3>{{ tenant.name }}</h3>
+            <p>Email: {{ tenant.email }}</p>
+            <p>Phone: {{ tenant.phone }}</p>
+            <p>Property: {{ tenant.property.name }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
